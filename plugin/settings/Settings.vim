@@ -53,9 +53,9 @@ set ignorecase                        " ignore case when searching
 set smartcase
 set smarttab                          " insert tabs on the start of a line according to
 set expandtab                         " replace <TAB> with spaces
-set softtabstop=2
-set shiftwidth=2
-set tabstop=2
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
 set shortmess=Ia                      " remove splash wording
 
 " disable sound on errors
@@ -113,3 +113,6 @@ cnoremap %% <C-R>=expand('%:h').'/'<CR>
 " quick open vimrc in a new tab
 nmap <leader>v :tabe $MYVIMRC<CR>
 map <leader>0 :topleft 100 :split README.md<CR>
+
+" disable delimitMate when editing c or cpp
+au FileType c,cpp,java let b:delimitMate_matchpairs = "(:),[:],<:>"
