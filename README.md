@@ -1,4 +1,5 @@
 Fork from eddie-vim, with some modifications of mine for better CPP experience.
+
 1. the delimitMate plugin auto insert the closing parenthesis, which is good. But when editing CPP/C/JAVA files, the auto inserted closing '}' is not going like what we want. So I just unregister the '{}' from the matching pairs in the delimitMate's options.
 
 2. fix some error when start vim with the vimrc file.
