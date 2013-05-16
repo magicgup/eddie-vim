@@ -42,7 +42,8 @@ syntax enable
 set t_Co=256
 try
   "colorscheme rails_envy
-  colo zenburn
+  "colo zenburn
+  colo wombat256mod
 catch
 endtry
 
